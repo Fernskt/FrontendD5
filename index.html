@@ -1,0 +1,200 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/globales.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;700&display=swap" rel="stylesheet" />
+    <title>Proyecto D5</title>
+</head>
+
+<body>
+    <header class="contenedor-header">
+        <nav class="navegacion">
+            <!-- Hamburguesa -->
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- Logo -->
+            <a href="#" class="enlace">
+                <img src="img/logo2.png" alt="" class="logo" />
+            </a>
+
+            <!--Enlaces y botones del nav-->
+            <div class="enlaces">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href="#proyecto">Proyecto</a>
+                <a href="#calendario">Calendario</a>
+                <a href="#pendientes">Pendientes</a>
+                <a href="#block-de-notas">Block de Notas</a>
+                <a href="#agenda">Agenda</a>
+                <a href="#perfil">Perfil</a>
+
+                
+            </div>
+        </nav>
+        <div class="contain">
+            <div class="container-saludo">
+                <h2 th:if="${session.usuariosession != null}" th:text="'Hola de vuelta '">Hola de vuelta <span class="nombre">Fernando</span> </h2>
+                <h2 th:if="${session.usuariosession != null}" th:text="${session.usuariosession.nombre}"></h2>
+                <div class="container-imagen">
+                    <a><img src="img/perfil-del-usuario.png" width="200" ></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <!-- CONTENEDOR PRINCIPAL-->
+
+    <main class="main">
+        <div class="contenedor-principal">
+
+            <div class="myCard" id="proyecto">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <h3 class="title">PROYECTO</h3>
+                        <img class="img-cards" src="img/creative.jpg" alt="proyecto">
+                    </div>
+                    <div class="backSide">
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam totam esse eligendi obcaecati vero non dolorum natus ad recusandae illo dolor, rerum repellat fugiat</p>
+                        <a class="botonLink">CLICK AQUÍ</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="myCard" id="calendario">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <h3 class="title">CALENDARIO</h3>
+                        <img class="img-cards" src="img/calendario2.jpg" alt="calendario">
+                    </div>
+                    <div class="backSide">
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam totam esse eligendi obcaecati vero non dolorum natus ad recusandae illo dolor, rerum repellat fugiat</p>
+                        <a class="botonLink">CLICK AQUÍ</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="myCard" id="pendientes">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <h3 class="title">PENDIENTES</h3>
+                        <img class="img-cards" src="img/pendientes.jpg" alt="pendientes">
+                    </div>
+                    <div class="backSide">
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam totam esse eligendi obcaecati vero non dolorum natus ad recusandae illo dolor, rerum repellat fugiat</p>
+                        <a class="botonLink">CLICK AQUÍ</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="myCard" id="block-de-notas">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <h3 class="title">BLOCK DE NOTAS</h3>
+                        <img class="img-cards" src="img/block.jpg" alt="block de notas">
+                    </div>
+                    <div class="backSide">
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam totam esse eligendi obcaecati vero non dolorum natus ad recusandae illo dolor, rerum repellat fugiat</p>
+                        <a class="botonLink">CLICK AQUÍ</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="myCard" id="perfil">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <h3 class="title">PERFIL</h3>
+                        <img class="img-cards" src="img/perfil.jpg" alt="perfil">
+                    </div>
+                    <div class="backSide">
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam totam esse eligendi obcaecati vero non dolorum natus ad recusandae illo dolor, rerum repellat fugiat</p>
+                        <a class="botonLink">CLICK AQUÍ</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="myCard" id="agenda">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <h3 class="title">AGENDA</h3>
+                        <img class="img-cards" src="img/contactos.png" alt="agenda">
+                    </div>
+                    <div class="backSide">
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam totam esse eligendi obcaecati vero non dolorum natus ad recusandae illo dolor, rerum repellat fugiat</p>
+                        <a class="botonLink">CLICK AQUÍ</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!--OTRAS CARDS-->
+        <!-- <div class="contenedor-cards">
+            <h2>Perfil</h2>
+            <img class="img-cards" src="img/creative.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae doloremque quaerat placeat adipisci magnam doloribus corporis nesciunt nemo minima quae excepturi, dolorem molestiae saepe explicabo provident consequuntur hic necessitatibus cum?</p>
+        </div>
+       
+        <div class="contenedor-cards">
+            <h2>Calendario</h2>
+            <img class="img-cards" src="img/creative.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae doloremque quaerat placeat adipisci magnam doloribus corporis nesciunt nemo minima quae excepturi, dolorem molestiae saepe explicabo provident consequuntur hic necessitatibus cum?</p>
+        </div>
+       
+        <div class="contenedor-cards">
+            <h2>Pendientes</h2>
+            <img class="img-cards" src="img/creative.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae doloremque quaerat placeat adipisci magnam doloribus corporis nesciunt nemo minima quae excepturi, dolorem molestiae saepe explicabo provident consequuntur hic necessitatibus cum?</p>
+        </div>
+        
+        <div class="contenedor-cards">
+            <h2>Block de Notas</h2>
+            <img class="img-cards" src="img/creative.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae doloremque quaerat placeat adipisci magnam doloribus corporis nesciunt nemo minima quae excepturi, dolorem molestiae saepe explicabo provident consequuntur hic necessitatibus cum?</p>
+        </div>
+        
+        <div class="contenedor-cards">
+            <h2>Agenda de Contactos</h2>
+            <img class="img-cards" src="img/creative.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae doloremque quaerat placeat adipisci magnam doloribus corporis nesciunt nemo minima quae excepturi, dolorem molestiae saepe explicabo provident consequuntur hic necessitatibus cum?</p>
+        </div>
+        
+        <div class="contenedor-cards">
+            <h2>Proyectos</h2>
+            <img class="img-cards" src="img/creative.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae doloremque quaerat placeat adipisci magnam doloribus corporis nesciunt nemo minima quae excepturi, dolorem molestiae saepe explicabo provident consequuntur hic necessitatibus cum?</p>
+        </div> -->
+    </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+          <p>&copy; 2023 Argentina</p>
+          <div class="social">
+            <img src="/img/social-icons.svg" />
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>
